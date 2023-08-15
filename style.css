@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    text-align: center;
+    background: #457b9d;
+    color: #f1faee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.sudoku-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 4px solid #1d3557;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid #a8dadc;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+table tr:nth-child(3n) td,
+table tr:nth-child(3n+3) td {
+    border-bottom: 2px solid #1d3557;
+}
+
+table td:nth-child(3n) {
+    border-right: 2px solid #1d3557;
+}
+
+input {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1d3557;
+    color: #f1faee;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00509d;
+}
+
+.solved {
+    background-color: #9ccc65;
+    transition: all 0.2s ease-in-out;
+}
